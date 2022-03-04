@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<style>
+body
+{
+    background-color: #161616;
+    color: red;
+    font-size: 1.5vmax;
+}
+main
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-left:-8px;
+    margin-right:-8px;
+}
+
+#navbar
+{
+    position: fixed;
+    width: 100%;
+    margin-top:-8px;
+    background-color:hsl(210deg, 100%, 10%);
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link
+{
+    color: yellow;
+    text-decoration: none;
+}
+
+#welcome-section
+{
+    background: hsl(120deg, 100%, 10%);
+    /*margin: 0vh -2vmax 0vh -2vmax;*/
+    height: 100vh;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 300%
+}
+
+#projects
+{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    height: 80vh;
+    background-color: #003f6f;
+    padding-left: 8%;
+}
+
+.project-tile
+{
+    width: 70%;
+    height: auto;
+    border: 0.5vmax solid cyan;
+    border-radius: 20px;
+}
+
+#projects img:hover
+{
+    animation-name: page;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes page
+{
+    0%
+    {
+        border-color: cyan;
+    }
+
+    100%
+    {
+        border-color: orangered;
+    }
+}
+
+#projects div
+{
+    width: 90%;
+    height: auto;
+}
+
+#reachme
+{
+    background-color: #440003;
+    text-align: center;
+    padding-top: 2vmax;
+}
+
+#reachme img
+{
+    width: 19%;
+    height: auto;
+    border-radius: 70px;
+}
+
+#reachme div
+{
+    background-color: #6e2b05;
+    width:30%;
+    margin:auto;
+}
+
+#reachme div h3
+{
+    font-size: 100%;
+    color:yellowgreen;
+    font-style: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 300px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+}
+
+
+</style>
+
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+
+    <body>
+        <main>
+            <nav id = "navbar">
+                <a class = "nav-link" href = "#welcome-section">Who am I?</a>
+                <a class = "nav-link" href = "#project">My Projects</a>
+                <a class = "nav-link" href = "#other_stuff">Additional Information</a>
+            </nav>
+            <section id = "welcome-section">
+                <header>
+                    <h1 style = "font-weight: 800;">My Portfolio</h1>
+                    <p style = "font-weight: 600;">I'm Epsilon-79, and I'm learning to make simple web pages. This is one of them.</p>
+                </header>
+            </section>
+    
+            <h2 id = "project" style = "text-align: center;">My other Pages</h2>
+            <section id = "projects">
+    
+                <div>
+                    <a href = "file:///C:/Users/Steve/OneDrive/Documents/Programming%20Projects/HTLM_CSS/Freecodecamp%20Project%201/index.html" target = "_blank"><img class = "project-tile" src = "C:\Users\Steve\OneDrive\Pictures\Screenshots\2021-08-27.png" alt = "Tribute Page"></a>
+                </div>
+                    
+                <div>
+                    <a href = "file:///C:/Users/Steve/OneDrive/Documents/Programming%20Projects/HTLM_CSS/Freecodecamp%20Project%202/index.html" target = "_blank"><img class = "project-tile" src = "C:\Users\Steve\OneDrive\Pictures\Screenshots\2021-08-27 (2).png" alt = "Login Form"></a>
+                </div>
+                    
+                <div>
+                    <a href = "file:///C:/Users/Steve/OneDrive/Documents/Programming%20Projects/HTLM_CSS/Freecodecamp%20Project%203/index.html" target = "_blank"><img class = "project-tile" src = "C:\Users\Steve\OneDrive\Pictures\Screenshots\2021-08-27 (3).png" alt = "Product Page"></a>
+                </div>
+                    
+                <div>
+                    <a href = "file:///C:/Users/Steve/OneDrive/Documents/Programming%20Projects/HTLM_CSS/Freecodecamp%20Project%204/index.html" target = "_blank"><img class = "project-tile" src = "C:\Users\Steve\OneDrive\Pictures\Screenshots\2021-08-27 (4).png" alt = "Technical Documentation Page"></a>
+                </div>
+                
+            </section>
+    
+            <section id = "reachme">
+                <a id = "profile-link" href = "https://codepen.io/Epsilon-79" target = "_blank">
+                    <div>
+                        <img src = "https://cpwebassets.codepen.io/assets/social/facebook-default-05cf522ae1d4c215ae0f09d866d97413a2204b6c9339c6e7a1b96ab1d4a7340f.png">
+                        <h3>Code Pen</h3>
+                    </div>
+                </a>
+            </section>
+    
+            <footer id = "other_stuff">
+                <h5 style = "text-align: center;">CopyRight &copy blah blah this page is just a dummy page don't take it seriously</h5>
+            </footer>
+        </main>
+    </body>
+</html>
